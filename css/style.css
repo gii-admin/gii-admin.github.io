@@ -64,3 +64,10 @@ body {
 .table-row-item:last-child {
     border-bottom-width: 0px;
 }
+
+
+/* === Override to ensure visibility if JS fails === */
+.animated-section {
+  opacity: 1 !important;
+  transform: none !important;
+}
