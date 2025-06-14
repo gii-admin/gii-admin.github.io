@@ -160,3 +160,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initializeAnimations();
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const appContainer = document.getElementById('app-container');
+  if (appContainer) {
+    appContainer.classList.remove('opacity-0');
+    appContainer.classList.add('opacity-100');
+  }
+});
