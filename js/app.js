@@ -65,22 +65,53 @@ function updateNews(lang) {
     const newsGrid = document.getElementById('news-grid');
     if (!newsGrid) return;
 
-    const { news_sample_title, news_sample_date, news_sample_body, news_placeholder_title_1, news_placeholder_date_1, news_placeholder_body_1, news_placeholder_title_2, news_placeholder_date_2, news_placeholder_body_2 } = content[lang];
-    
-    const newsItems = [
-        { title: news_sample_title, date: news_sample_date, body: news_sample_body },
-        { title: news_placeholder_title_1, date: news_placeholder_date_1, body: news_placeholder_body_1 },
-        { title: news_placeholder_title_2, date: news_placeholder_date_2, body: news_placeholder_body_2 },
-    ];
+    const articles = content[lang].news_articles || [];
+    const readMoreText = content[lang].read_more || 'Read More';
+    const readLessText = content[lang].read_less || 'Read Less';
 
-    newsGrid.innerHTML = newsItems.map(item => `
+    newsGrid.innerHTML = articles.map((article) => `
         <div class="bg-white dark:bg-gray-950/50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 animated-section">
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${item.date}</p>
-            <h3 class="text-xl font-bold mb-3">${item.title}</h3>
-            <p class="text-gray-600 dark:text-gray-300">${item.body}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">${article.date}</p>
+            <h3 class="text-xl font-bold mb-3">${article.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">${article.summary}</p>
+            <div class="news-details-content max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+                <div class="pt-4 mt-4 border-t border-gray-200 dark:border-gray-700">
+                    <p class="text-gray-600 dark:text-gray-300">${article.details}</p>
+                    ${article.link ? `<a href="${article.link}" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-blue-500 dark:text-blue-400 font-semibold hover:underline">${article.link_text} &rarr;</a>` : ''}
+                </div>
+            </div>
+            <button class="news-toggle-button text-blue-500 dark:text-blue-400 font-semibold mt-2 flex items-center space-x-1 group">
+                <span class="button-text">${readMoreText}</span>
+                <i data-lucide="chevron-down" class="h-4 w-4 transition-transform duration-300"></i>
+            </button>
         </div>
     `).join('');
+    
+    document.querySelectorAll('.news-toggle-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const detailsWrapper = button.previousElementSibling;
+            const icon = button.querySelector('i');
+            const buttonText = button.querySelector('.button-text');
+
+            const isCollapsed = detailsWrapper.classList.contains('max-h-0');
+
+            if (isCollapsed) {
+                detailsWrapper.classList.remove('max-h-0');
+                detailsWrapper.style.maxHeight = detailsWrapper.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+                buttonText.textContent = readLessText;
+            } else {
+                detailsWrapper.style.maxHeight = null;
+                detailsWrapper.classList.add('max-h-0');
+                icon.style.transform = 'rotate(0deg)';
+                buttonText.textContent = readMoreText;
+            }
+        });
+    });
+
+    lucide.createIcons();
 }
+
 
 
 function toggleLanguage() {
