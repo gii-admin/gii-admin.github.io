@@ -66,8 +66,12 @@ body {
 }
 
 
-/* === Override to ensure visibility if JS fails === */
+/* Override to ensure content visible even if animations disabled */
 .animated-section {
   opacity: 1 !important;
   transform: none !important;
+}
+
+#app-container {
+  opacity: 1 !important;
 }

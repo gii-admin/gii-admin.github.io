@@ -1,6 +1,4 @@
 import { content } from './content_data.js';
-import { initializeAnimations } from './animations.js';
-
 let currentLang = localStorage.getItem('lang') || 'en';
 
 function updateContent(lang) {
@@ -122,8 +120,7 @@ function toggleLanguage() {
     setTimeout(() => {
         updateContent(currentLang);
         container.style.opacity = 1;
-        initializeAnimations();
-    }, 300);
+        }, 300);
 }
 
 function updateActiveNav() {
@@ -158,8 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateContent(currentLang);
     appContainer.style.opacity = 1;
 
-    initializeAnimations();
-});
+    });
 
 
 
