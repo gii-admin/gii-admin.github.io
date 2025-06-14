@@ -117,11 +117,9 @@ export const content = {
             { name: "Natalie Song", role: "Coordinator", grade: "8th grade" }
         ],
         mentors: [
-            { name: "Young Ran Chae", role: "Accounting" },
-            { name: "Myung Kyung Chung", role: "Team Organization" },
-            { name: "Young Nam Kim", role: "Meeting Organization" },
-            { name: "Huil Park", role: "Finance" },
-            { name: "Han Hee Song", role: "Coding Education" },
+            { name: "Myung Kyung Chung", role: "Executive Officer" },
+            { name: "Young Ran Chae", role: "Financial Officer" },
+            { name: "YoungMi Park", role: "Operating Officer" },
         ]
     },
     ko: {
@@ -242,11 +240,9 @@ export const content = {
             { name: "나탈리 송", role: "코디네이터", grade: "8학년" }
         ],
         mentors: [
-            { name: "채영란", role: "회계" },
-            { name: "정명경", role: "팀 조직" },
-            { name: "김영남", role: "회의 조직" },
-            { name: "박후일", role: "재정" },
-            { name: "송한희", role: "코딩 교육" }
+            { name: "정명경", role: "경영 책임" },
+            { name: "채영란", role: "재무 책임" },
+            { name: "박영미", role: "운영 책임" },
         ]
     }
 };
