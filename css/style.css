@@ -75,3 +75,7 @@ body {
 #app-container {
   opacity: 1 !important;
 }
+
+/* Custom additions */
+.page-background{background-size:cover;background-position:center;background-repeat:no-repeat;}
+.news-card:hover{transform:translateY(-4px);transition:transform .3s;}
