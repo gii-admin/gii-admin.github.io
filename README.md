@@ -57,7 +57,7 @@ A modern, bilingual website for Global Impact Innovators - a 501(c)(3) non-profi
 
 ## Contact
 
-For more information, please contact us at [info@globalimpactinnovators.org](mailto:info@globalimpactinnovators.org)
+For more information, please contact us at [anticodingcodingteam@gmail.com](mailto:anticodingcodingteam@gmail.com)
 
 ## License
 

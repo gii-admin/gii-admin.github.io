@@ -23,22 +23,22 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center relative hero-gradient">
+      <section className="min-h-screen flex items-center justify-center relative hero-gradient py-20">
         <div className="text-center text-white px-4 max-w-4xl mx-auto">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
               {t('home.hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
               {t('home.hero.subtitle')}
             </p>
-            <div className="max-w-3xl mx-auto mb-8">
-              <blockquote className="text-lg md:text-xl text-white/90 italic border-l-4 border-white/50 pl-6 animate-slide-up">
+            <div className="max-w-3xl mx-auto mb-8 px-2 sm:px-6">
+              <blockquote className="text-base sm:text-lg md:text-xl text-white/90 italic border-l-4 border-white/50 pl-4 sm:pl-6 animate-slide-up">
                 &ldquo;{t('mission.statement')}&rdquo;
               </blockquote>
             </div>
             <div className="flex justify-center">
-              <a href="mailto:info@globalimpactinnovators.org" className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+              <a href="mailto:anticodingcodingteam@gmail.com" className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
                 {t('common.contactUs')}
               </a>
             </div>
@@ -56,7 +56,7 @@ const HomePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {t('team.title')}
             </h2>
           </div>
@@ -100,7 +100,7 @@ const HomePage = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {t('achievements.title')}
             </h2>
           </div>
@@ -146,7 +146,7 @@ const HomePage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {t('activities.title')}
             </h2>
           </div>
@@ -186,7 +186,7 @@ const HomePage = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {t('news.title')}
             </h2>
           </div>
@@ -228,16 +228,16 @@ const HomePage = () => {
           <div className="text-white mb-6">
             <Mail className="w-12 h-12 mx-auto mb-4" />
           </div>
-          <h2 className="text-3xl font-bold text-white mb-4">{t('common.getInvolved')}</h2>
-          <p className="text-xl text-purple-100 mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">{t('common.getInvolved')}</h2>
+          <p className="text-lg sm:text-xl text-purple-100 mb-8">
             {t('common.contact')}
           </p>
           <a 
-            href="mailto:info@globalimpactinnovators.org"
-            className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
+            href="mailto:anticodingcodingteam@gmail.com"
+            className="bg-white text-purple-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center text-sm sm:text-base"
           >
             <Mail className="w-5 h-5 mr-2" />
-            info@globalimpactinnovators.org
+            {t('common.contactUs')}
           </a>
         </div>
       </section>

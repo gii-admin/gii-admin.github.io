@@ -12,10 +12,10 @@ const ActivitiesPage = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-orange-500 to-red-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('activities.title')}
           </h1>
-          <p className="text-xl md:text-2xl text-orange-100 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-orange-100 max-w-3xl mx-auto">
             {t('activities.heroDesc')}
           </p>
         </div>
@@ -25,8 +25,8 @@ const ActivitiesPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{t('activities.annualProgram')}</h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">{t('activities.annualProgram')}</h2>
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
               {t('activities.programDesc')}
             </p>
           </div>
@@ -193,11 +193,11 @@ const ActivitiesPage = () => {
             {t('common.contact')}
           </p>
           <a 
-            href="mailto:info@globalimpactinnovators.org"
+            href="mailto:anticodingcodingteam@gmail.com"
             className="bg-white text-orange-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
           >
             <Mail className="w-5 h-5 mr-2" />
-            info@globalimpactinnovators.org
+            {t('common.contactUs')}
           </a>
         </div>
       </section>

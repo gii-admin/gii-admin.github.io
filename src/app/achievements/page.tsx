@@ -12,10 +12,10 @@ const AchievementsPage = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             Achievements
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
             {t('achievements.heroDesc')}
           </p>
         </div>
@@ -178,11 +178,11 @@ const AchievementsPage = () => {
             {t('common.contact')}
           </p>
           <a 
-            href="mailto:info@globalimpactinnovators.org"
+            href="mailto:anticodingcodingteam@gmail.com"
             className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
           >
             <Mail className="w-5 h-5 mr-2" />
-            info@globalimpactinnovators.org
+            {t('common.contactUs')}
           </a>
         </div>
       </section>

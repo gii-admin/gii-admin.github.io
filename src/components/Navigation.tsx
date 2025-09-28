@@ -33,10 +33,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
               <span className="text-white font-bold text-sm">GII</span>
             </div>
-            <span className="text-xl font-semibold text-gray-900">Global Impact Innovators</span>
+            <span className="text-sm sm:text-xl font-semibold text-gray-900 hidden sm:block">Global Impact Innovators</span>
+            <span className="text-sm font-semibold text-gray-900 sm:hidden">GII</span>
           </Link>
 
           {/* Desktop Navigation */}
