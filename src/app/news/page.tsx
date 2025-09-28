@@ -86,10 +86,10 @@ const NewsPage = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-green-600 to-teal-600">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('news.title')}
           </h1>
-          <p className="text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-green-100 max-w-3xl mx-auto">
             {t('news.subtitle')}
           </p>
         </div>
@@ -262,7 +262,7 @@ const NewsPage = () => {
                   {t('news.stayUpdated')}
                 </p>
                 <a
-                  href="mailto:info@globalimpactinnovators.org?subject=News Updates Subscription"
+                  href="mailto:anticodingcodingteam@gmail.com?subject=News Updates Subscription"
                   className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center text-sm"
                 >
                   {t('news.subscribe')}
@@ -285,7 +285,7 @@ const NewsPage = () => {
             {t('common.contact')}
           </p>
           <a 
-            href="mailto:info@globalimpactinnovators.org"
+            href="mailto:anticodingcodingteam@gmail.com"
             className="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
           >
             <Mail className="w-5 h-5 mr-2" />

@@ -92,10 +92,10 @@ const TeamPage = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-600">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
             {t('team.title')}
           </h1>
-          <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto">
             {t('team.meetTeam')}
           </p>
         </div>
@@ -108,7 +108,7 @@ const TeamPage = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-6">
               <Crown className="w-8 h-8 text-yellow-600" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               {t('team.studentLeaders')}
             </h2>
             <p className="text-lg text-gray-700">
@@ -169,7 +169,7 @@ const TeamPage = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
               <Users className="w-8 h-8 text-blue-600" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               {t('team.studentMembers')}
             </h2>
             <p className="text-lg text-gray-700">
@@ -196,7 +196,7 @@ const TeamPage = () => {
                 {t('team.joinCommunityDesc')}
               </p>
               <a 
-                href="mailto:info@globalimpactinnovators.org"
+                href="mailto:anticodingcodingteam@gmail.com"
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
               >
                 {t('team.applyToJoin')}
@@ -213,7 +213,7 @@ const TeamPage = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-6">
               <UserCheck className="w-8 h-8 text-green-600" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               {t('team.programOperators')}
             </h2>
             <p className="text-lg text-gray-700">
@@ -273,7 +273,7 @@ const TeamPage = () => {
             {t('team.joinTeamDesc')}
           </p>
           <a 
-            href="mailto:info@globalimpactinnovators.org"
+            href="mailto:anticodingcodingteam@gmail.com"
             className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-flex items-center"
           >
             <Mail className="w-5 h-5 mr-2" />

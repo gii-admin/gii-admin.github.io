@@ -23,7 +23,7 @@ const translations = {
     'nav.about': 'About Us',
     
     // Common
-    'common.contact': 'If you are interested, please contact us at info@globalimpactinnovators.org for more information.',
+    'common.contact': 'If you are interested, please contact us at anticodingcodingteam@gmail.com for more information.',
     'common.readMore': 'Read More',
     'common.learnMore': 'Learn More',
     'common.contactUs': 'Contact Us',
@@ -212,7 +212,7 @@ const translations = {
     'nav.about': '운영진',
     
     // Common
-    'common.contact': '관심이 있다면 info@globalimpactinnovators.org로 이메일을 보내어 정보를 얻어보세요.',
+    'common.contact': '관심이 있다면 anticodingcodingteam@gmail.com로 이메일을 보내어 정보를 얻어보세요.',
     'common.readMore': '더 읽기',
     'common.learnMore': '더 알아보기',
     'common.contactUs': '연락하기',
@@ -395,12 +395,26 @@ const translations = {
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('en');
 
+  // Load language preference from localStorage on mount
+  React.useEffect(() => {
+    const savedLanguage = localStorage.getItem('preferredLanguage') as Language;
+    if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'ko')) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
+
+  // Save language preference to localStorage when it changes
+  const handleSetLanguage = React.useCallback((newLanguage: Language) => {
+    setLanguage(newLanguage);
+    localStorage.setItem('preferredLanguage', newLanguage);
+  }, []);
+
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations['en']] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );
