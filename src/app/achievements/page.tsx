@@ -77,10 +77,15 @@ const AchievementsPage = () => {
                     <Play className="w-5 h-5 mr-2" />
                     {t('common.watchDemo')}
                   </a>
-                  <button className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 inline-flex items-center justify-center">
-                    <Code className="w-5 h-5 mr-2" />
-                    View Project Details
-                  </button>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=appinventor.ai_anticodingcodingteam.hackathon2025_v3_trafficlight" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 inline-flex items-center justify-center"
+                  >
+                    <Smartphone className="w-5 h-5 mr-2" />
+                    Get on Google Play
+                  </a>
                 </div>
               </div>
               
@@ -112,19 +117,68 @@ const AchievementsPage = () => {
             </div>
           </div>
 
-          {/* Project 2 Placeholder */}
+          {/* EcoTrace Project */}
           <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-8 md:p-12">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Code className="w-8 h-8 text-white" />
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                    <Code className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{t('achievements.nextInnovation')}</h3>
+                    <p className="text-green-600 font-semibold">{t('achievements.comingSoon')}</p>
+                  </div>
+                </div>
+                
+                <p className="text-lg text-gray-700 mb-6">
+                  {t('achievements.upcomingProjects')}
+                </p>
+                
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-center">
+                    <Trophy className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">{t('achievements.ecoTraceCrossPlatform')}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Users className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">{t('achievements.ecoTracePersonalized')}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Shield className="w-5 h-5 text-green-600 mr-3" />
+                    <span className="text-gray-700">{t('achievements.ecoTraceCommunity')}</span>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a 
+                    href="https://youtu.be/q0JhWTD5HXA" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-300 inline-flex items-center justify-center"
+                  >
+                    <Play className="w-5 h-5 mr-2" />
+                    {t('common.watchDemo')}
+                  </a>
+                </div>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t('achievements.nextInnovation')}</h3>
-              <p className="text-lg text-gray-700 mb-6">
-                {t('achievements.upcomingProjects')}
-              </p>
-              <div className="inline-flex items-center text-green-600 font-semibold">
-                <Trophy className="w-5 h-5 mr-2" />
-                {t('achievements.comingSoon')}
+              
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">{t('achievements.ecoTraceKeyFeatures')}</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700">{t('achievements.ecoTraceAICalculator')}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700">{t('achievements.ecoTraceRealTime')}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700">{t('achievements.ecoTraceGameified')}</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
